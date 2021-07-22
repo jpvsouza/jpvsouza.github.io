@@ -1,0 +1,35 @@
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h6{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+  background-color: azure;
+}
+
+em{
+  font-weight: bold;
+}
+
+.titulo{
+  font-size: 30px;
+}
+
+.foto{
+  font-size: 27px;
+}
+
+.descricao{
+  font-size: 24px;
+}
+
+.lista{
+  font-size: 21px;
+}
+
+.sda{
+  font-size: 18px;
+}
