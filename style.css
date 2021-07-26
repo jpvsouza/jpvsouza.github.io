@@ -5,7 +5,9 @@ h1{
 
 h6{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
+  position: relative;
+  margin-left: 20%;
+  margin-top: 12%;
 }
 
 body{
@@ -27,10 +29,13 @@ em{
 #foto{
   border-radius: 50px;
   background-color:blueviolet;
-  padding: 2px;
+  padding: 7px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: absolute;
+}
+
+.image-container {
+  height: 280px;
 }
 
 .titulo{
