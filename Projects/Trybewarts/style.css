@@ -57,3 +57,62 @@ footer {
   text-align: center;
   padding-top: 0.5%;
 }
+
+@media screen and (max-width: 600px){
+  body {
+    padding: 10px;
+  }
+
+  .trybewarts-login {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    height: 100px;
+  }
+
+  #trybewarts-header-title {
+    margin: auto;
+  }
+  
+  #trybewarts-forms-logo {
+    display: none;
+  }
+
+  #nameLast {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campo {
+    margin-bottom: 10px;
+  }
+
+  #emailSelect{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  }
+
+  #evaluation-form{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+  }
+
+  #familiaConteudo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #label-rate {
+    width: 90%;
+  }
+}
