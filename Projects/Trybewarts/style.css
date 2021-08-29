@@ -61,6 +61,11 @@ footer {
 @media screen and (max-width: 600px){
   body {
     padding: 10px;
+    background-image: url(images/trybewarts-colored.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
   }
 
   .trybewarts-login {
