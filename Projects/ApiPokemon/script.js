@@ -27,6 +27,11 @@ const pegaLista = (enderecoAtual) => {
       itemLista.addEventListener('click', () => {
         pegaPokemon(itemApi.url);
       });
+      select.addEventListener('change', () => {
+        if (itemApi.name === select.value) {
+          pegaPokemon(itemApi.url);
+        }
+      });
       itemLista.addEventListener('mouseover', () => {
         itemLista.style.cursor = 'pointer';
         itemLista.style.background = 'red';
