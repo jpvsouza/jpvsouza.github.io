@@ -4,3 +4,13 @@
     overflow-y: scroll;
     border: solid black 1px;
 }
+
+.caixa {
+    border: solid black 1px;
+    width: 70%;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+}
