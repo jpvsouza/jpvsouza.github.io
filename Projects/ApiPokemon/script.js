@@ -46,11 +46,11 @@ const atualizaFormulario = (pokemon) => {
   const tagPeso = document.getElementById('peso');
   const tagFoto = document.getElementById('foto');
 
-  tagNome.innerHTML = pokemon.name;
-  tagNumero.innerHTML = pokemon.id;
-  tagTipo1.innerHTML = pokemon.types[0].type.name;
-  tagTipo2.innerHTML = pokemon.types[1].type.name;
-  tagPeso.innerHTML = pokemon.weight;
+  tagNome.innerHTML = `Nome: ${pokemon.name}`;
+  tagNumero.innerHTML = `Número: ${pokemon.id}`;
+  tagTipo1.innerHTML = `Tipo 1: ${pokemon.types[0].type.name}`;
+  tagTipo2.innerHTML = `Tipo 2: ${pokemon.types[1].type.name}`;
+  tagPeso.innerHTML = `Peso: ${Math.round(pokemon.weight/2.2046)}kg`;
   tagFoto.src = pokemon.sprites.other.dream_world.front_default;
 };
 
