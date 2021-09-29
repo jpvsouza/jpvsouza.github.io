@@ -21,8 +21,11 @@ const pegaLista = (enderecoAtual) => {
       const itemLista = document.createElement('li');
       itemLista.innerHTML = itemApi.name;
       itemLista.addEventListener('click', () => {
-          pegaPokemon(itemApi.url);
+        pegaPokemon(itemApi.url);
       });
+      itemLista.addEventListener('mouseover', () => {
+        itemLista.style.cursor = 'pointer';
+      })
       listaOrdenada.appendChild(itemLista);
     });
   })
