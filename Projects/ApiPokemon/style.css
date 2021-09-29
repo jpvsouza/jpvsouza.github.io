@@ -14,3 +14,7 @@
 .container {
     display: flex;
 }
+
+#foto {
+    height: 200px;
+}
