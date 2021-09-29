@@ -1,4 +1,6 @@
 .list {
     max-height: 500px;
+    width: 20%;
     overflow-y: scroll;
+    border: solid black 1px;
 }
