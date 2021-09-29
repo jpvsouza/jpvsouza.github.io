@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: none;
+}
+
+#select {
+    display:flex;
+    width: 90%;
+}
+
+.caixa {
+    width: 90%;
+}

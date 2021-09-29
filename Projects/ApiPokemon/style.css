@@ -1,6 +1,6 @@
 .list {
     max-height: 500px;
-    width: 20%;
+    width: fit-content;
     overflow-y: scroll;
     border: solid black 1px;
 }
@@ -17,4 +17,8 @@
 
 #foto {
     height: 200px;
+}
+
+#select {
+    display: none;
 }

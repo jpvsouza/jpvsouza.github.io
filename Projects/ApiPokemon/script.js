@@ -16,10 +16,14 @@ const pegaLista = (enderecoAtual) => {
   const resultadoDoFetch = verificaFetch(enderecoAtual)
   .then((resultado) => {
     const listaOrdenada = document.getElementById('lista');
+    const select = document.getElementById('select');
     listaOrdenada.innerHTML = '';
+    select.innerHTML = '';
     resultado.results.forEach((itemApi) => {
       const itemLista = document.createElement('li');
+      const itemOption = document.createElement('option');
       itemLista.innerHTML = itemApi.name;
+      itemOption.innerHTML = itemApi.name;
       itemLista.addEventListener('click', () => {
         pegaPokemon(itemApi.url);
       });
@@ -31,6 +35,7 @@ const pegaLista = (enderecoAtual) => {
         itemLista.style.background = 'white';
       })
       listaOrdenada.appendChild(itemLista);
+      select.appendChild(itemOption);
     });
   })
   .catch((erro) => console.log(erro));
