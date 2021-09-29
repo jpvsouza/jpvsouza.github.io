@@ -21,9 +21,7 @@ const pegaLista = (enderecoAtual) => {
       const itemLista = document.createElement('li');
       itemLista.innerHTML = itemApi.name;
       itemLista.addEventListener('click', () => {
-        if (itemApi.name === 'bulbasaur') {
           pegaPokemon(itemApi.url);
-        }
       });
       listaOrdenada.appendChild(itemLista);
     });
@@ -49,7 +47,11 @@ const atualizaFormulario = (pokemon) => {
   tagNome.innerHTML = `Nome: ${pokemon.name}`;
   tagNumero.innerHTML = `Número: ${pokemon.id}`;
   tagTipo1.innerHTML = `Tipo 1: ${pokemon.types[0].type.name}`;
-  tagTipo2.innerHTML = `Tipo 2: ${pokemon.types[1].type.name}`;
+  if (pokemon.types[1] !== undefined) {
+    tagTipo2.innerHTML = `Tipo 2: ${pokemon.types[1].type.name}`;
+  } else {
+    tagTipo2.innerHTML = '';
+  }
   tagPeso.innerHTML = `Peso: ${Math.round(pokemon.weight/2.2046)}kg`;
   tagFoto.src = pokemon.sprites.other.dream_world.front_default;
 };
