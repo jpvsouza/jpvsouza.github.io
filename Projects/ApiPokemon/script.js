@@ -25,6 +25,10 @@ const pegaLista = (enderecoAtual) => {
       });
       itemLista.addEventListener('mouseover', () => {
         itemLista.style.cursor = 'pointer';
+        itemLista.style.background = 'red';
+      });
+      itemLista.addEventListener('mouseleave', () => {
+        itemLista.style.background = 'white';
       })
       listaOrdenada.appendChild(itemLista);
     });
