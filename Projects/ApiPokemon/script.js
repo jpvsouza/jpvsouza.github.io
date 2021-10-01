@@ -58,6 +58,8 @@ const atualizaFormulario = (pokemon) => {
   const tagNumero = document.getElementById('id');
   const tagTipo1 = document.getElementById('tipo1');
   const tagTipo2 = document.getElementById('tipo2');
+  const tagHabilidade1 = document.getElementById('habilidade1');
+  const tagHabilidade2 = document.getElementById('habilidade2');
   const tagPeso = document.getElementById('peso');
   const tagFoto = document.getElementById('foto');
 
@@ -68,6 +70,12 @@ const atualizaFormulario = (pokemon) => {
     tagTipo2.innerHTML = `Tipo 2: ${pokemon.types[1].type.name}`;
   } else {
     tagTipo2.innerHTML = '';
+  }
+  tagHabilidade1.innerHTML = `Habilidade 1: ${pokemon.abilities[0].ability.name}`;
+  if (pokemon.abilities[1] !== undefined) {
+    tagHabilidade2.innerHTML = `Habilidade 2: ${pokemon.abilities[1].ability.name}`;
+  } else {
+    tagHabilidade2.innerHTML = '';
   }
   tagPeso.innerHTML = `Peso: ${Math.round(pokemon.weight/2.2046)}kg`;
   tagFoto.src = pokemon.sprites.other.dream_world.front_default;

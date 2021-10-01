@@ -17,8 +17,13 @@
 
 #foto {
     height: 200px;
+    border: black solid;
 }
 
 #select {
     display: none;
+}
+
+body {
+    text-align: center;
 }

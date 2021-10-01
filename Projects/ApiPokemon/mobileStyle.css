@@ -15,3 +15,8 @@
 .caixa {
     width: 90%;
 }
+
+.ladoALado {
+    display: flex;
+    justify-content:space-around;
+}
