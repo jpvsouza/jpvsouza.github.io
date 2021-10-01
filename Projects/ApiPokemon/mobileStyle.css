@@ -9,14 +9,19 @@
 
 #select {
     display:flex;
-    width: 90%;
+    width: 100%;
 }
 
 .caixa {
-    width: 90%;
+    width: 100%;
 }
 
 .ladoALado {
     display: flex;
     justify-content:space-around;
+}
+
+body {
+    background-color: rgb(250, 235, 221);
+    text-align: center;
 }

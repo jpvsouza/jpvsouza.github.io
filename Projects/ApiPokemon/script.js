@@ -37,7 +37,7 @@ const pegaLista = (enderecoAtual) => {
         itemLista.style.background = 'red';
       });
       itemLista.addEventListener('mouseleave', () => {
-        itemLista.style.background = 'white';
+        itemLista.style.background = 'rgb(212, 237, 247)';
       })
       listaOrdenada.appendChild(itemLista);
       select.appendChild(itemOption);
